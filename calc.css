@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+  
+#container{
+    display: flex;
+    height: 100vh;
+}
+  
+.left-side{
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.right-side {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerbox{
+    width: 70%;
+    height: fit-content;
+    background: #e0f7e9;
+    color: #2f4f4f;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+    outline: none;
+}
+
+#tip-box {
+    display: none;
+    margin-top: 20px;
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+#tip-box h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+#tip-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#tip-box li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+
+#myChart{
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+  

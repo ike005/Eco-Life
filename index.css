@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    background-color: #1abc9c;
+    height: 80px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    position: fixed;
+}
+
+.inner-navbar{
+    display: flex;
+    width: max-content;
+    height: 100%;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+#navbar > .inner-navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+
+#navbar > .inner-navbar ul li:hover{
+    /* transform: scale(1.3); */
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 3px solid white;
+}
+
+.theme-toggle-container button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30%;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+#intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+
+#about-container h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1abc9c;
+}
+
+#about-container > .about-text {
+    width: 60%;
+    height: fit-content;
+    background: #e0f7e9;
+    color: #2f4f4f;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+#discover-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin: 5rem 0;
+}
+
+#discover-container h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1abc9c;
+    margin-bottom: 1.5rem;
+}
+
+.first-box {
+    width: 80%;
+    height: 40rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 0rem 2rem;
+    padding-bottom: 4rem;
+}
+
+
+.second-box {
+    width: 55%;
+    height: 35rem;
+    background: red;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: -1.2rem;
+}
+
+.second-box > .container {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: end;
+    z-index: 10;
+    margin-top: -2.5rem;
+}
+
+.second-box > .container > .choose-options{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.second-box > .container > .choose-options > select{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.second-box > .container > .choose-options > button{
+    height: 3rem;
+    width: 10rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.second-box > .container > .choose-options > button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.second-box > .container-second{
+    height: 93%;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+}
+
+.second-box > .container-second > .pie-section{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.second-box > .container-second > .pie-section > #pieChart{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.second-box > .container-second > .more-info{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.second-box > .container-second > .more-info > .topbottom-stat{
+    height: 90%;
+    width: 80%;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+/* footer section */
+footer{
+    background-color: #1abc9c;
+    height: 6rem;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: auto;
+    padding: 15px;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.footer-text > .img{
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    animation: spin 2s linear infinite;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

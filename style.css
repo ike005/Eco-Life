@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar {
+    background-color: #1abc9c;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10px;
+}
+
+.navbar> h1{
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 3px;
+    text-align: justify;
+}
+
+#parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    width: 100%;
+}
+
+.main-container{
+    background: linear-gradient(270deg, #1abc9c, #16a085, #1abc9c);
+    background-size: 600% 600%;
+    animation: gradientFlow 8s ease infinite;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container button{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #1abc9c;
+}
+
+.container button:hover{
+    background-color: #16a085;
+    color: white;
+}
+
+.container, h1, h2{
+    font-size: 1.5rem;
+}

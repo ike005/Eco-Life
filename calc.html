@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eco-Life Project</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+
+<body>
+    <section id="container">
+        <div class="left-side">
+            <div class="innerbox">
+                <h2>How Green Are You?</h2>
+                <form id="carbon-form">
+                    <div>
+                        <label for="drive-miles">Miles driven (weekly):</label>
+                        <input type="number" id="drive-miles" name="drive-miles" placeholder="Enter miles" required>
+                    </div>
+                    
+                    <div>
+                        <label for="transport">Transport frequently used:</label>
+                        <select id="transport" name="transport" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="car">Car/Uber</option>
+                            <option value="train">Train</option>
+                            <option value="bus">Bus</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="electricity-bill">Monthly electricity bill (USD):</label>
+                        <input type="number" id="electricity-bill" name="electricity-bill" placeholder="$100" required>
+                    </div>
+
+                    <div>
+                        <label for="gas-therms">Do you use natural gas for cooking?:</label>
+                        <select id="gas-therms" name="gas-therms" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="diet">Which best describes your diet?</label>
+                        <select id="diet" name="diet" required>
+                            <option value="" disabled selected>Select your diet type</option>
+                            <option value="high_meat">High meat (frequent meat consumption)</option>
+                            <option value="mixed">Mixed (some meat and plant-based foods)</option>
+                            <option value="vegetarian">Vegetarian (no meat, includes dairy/eggs)</option>
+                            <option value="vegan">Vegan (plant-based only, no animal products)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="recycle">Do you recycle?</label>
+                        <select id="recycle" name="recycle" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="calculate-btn">Enter</button>
+                
+                </form>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <!-- this will contain the visual data -->
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div id="tip-box">
+                <h3 style="text-align: center;">Eco-Friendly Tips</h3>
+                <ul id="tip-list">
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="calculator.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</body>
+
+</html>
